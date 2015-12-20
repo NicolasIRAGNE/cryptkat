@@ -1,15 +1,15 @@
 ﻿#----------------------------------------------------------------------------------------------------------------------------------
 #IMPORTATIONS DES DIFFERENTS MODULES UTILISES
 from tkinter import *
-from fenetre import *
-from icones import *
-from conversion import *
-from atbash import *
-from rot import *
-from boutons import *
-import morse
-import vigenere
-from initialisation import initialiser
+from interface.fenetre import fen
+from interface.icones import *
+from fonctions.conversion import *
+from fonctions.atbash import *
+from fonctions.rot import *
+from interface.boutons import *
+import fonctions.morse
+import fonctions.vigenere
+from interface.initialisation import initialiser
 #----------------------------------------------------------------------------------------------------------------------------------
 
 #----------------------------------------------------------------------------------------------------------------------------------

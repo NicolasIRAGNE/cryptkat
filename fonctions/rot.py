@@ -1,6 +1,6 @@
 ﻿# Créé par Nicolas, le 04/12/2015 en Python 3.2
 from tkinter import *
-from conversion import *
+from fonctions.conversion import *
 
 def effectuerRotation(messageClair, rotation):
     message =""

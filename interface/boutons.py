@@ -1,29 +1,29 @@
 from tkinter import *
-from fenetre import *
-from icones import *
-from conversion import *
-from atbash import *
-from rot import *
-import morse
-import vigenere
+from interface.fenetre import *
+from interface.icones import *
+from fonctions.conversion import *
+from fonctions.atbash import *
+from fonctions.rot import *
+import fonctions.morse
+import fonctions.vigenere
 
 def boutonVC():
     champResultat.delete(0, END)
-    vigenere.crypter(str(saisieMessage.get()).lower(), str(saisieCle.get()))
-    champResultat.insert(0,vigenere.crypter(str(saisieMessage.get()).lower(), str(saisieCle.get())))
+    fonctions.vigenere.crypter(str(saisieMessage.get()).lower(), str(saisieCle.get()))
+    champResultat.insert(0,fonctions.vigenere.crypter(str(saisieMessage.get()).lower(), str(saisieCle.get())))
 
 def boutonVD():
     champResultat.delete(0, END)
-    champResultat.insert(0,vigenere.decrypter(str(saisieMessage.get()).lower(), str(saisieCle.get())))
+    champResultat.insert(0,fonctions.vigenere.decrypter(str(saisieMessage.get()).lower(), str(saisieCle.get())))
 
 def boutonMorse():
     champResultat.delete(0, END)
-    champResultat.insert(0,morse.traduire(saisieMessage.get().lower()))
+    champResultat.insert(0,fonctions.morse.traduire(saisieMessage.get().lower()))
 
 def boutonMorseAudio():
-    morse.lire(saisieMessage.get().lower())
+    fonctions.morse.lire(saisieMessage.get().lower())
     champResultat.delete(0, END)
-    champResultat.insert(0,morse.traduire(saisieMessage.get().lower()))
+    champResultat.insert(0,fonctions.morse.traduire(saisieMessage.get().lower()))
 
 
 def boutonRotation():

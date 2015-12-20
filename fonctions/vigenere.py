@@ -1,5 +1,5 @@
 ﻿# Créé par Nicolas, le 05/12/2015 en Python 3.2
-from conversion import *
+from fonctions.conversion import *
 
 def crypter(messageClair,cle):
         longueurMessage = len(messageClair)
