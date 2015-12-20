@@ -1,2 +1,3 @@
 # cryptkat
-salem mon frère
+
+# Petit utilitaire de cryptage simple
