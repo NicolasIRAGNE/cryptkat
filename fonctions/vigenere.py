@@ -1,8 +1,9 @@
 ﻿# Créé par Nicolas, le 05/12/2015 en Python 3.2
 from fonctions.conversion import *
 
-def crypter(messageClair,cle):
+def crypter(messageClair,cleEntree):
         longueurMessage = len(messageClair)
+        cle = cleEntree.replace(" ","")
         longueurCle = len(cle)
         j = 0
         message = ""
@@ -26,8 +27,9 @@ def crypter(messageClair,cle):
         return(message)
 
 
-def decrypter(messageCrypte,cle):
+def decrypter(messageCrypte,cleEntree):
         longueurMessage = len(messageCrypte)
+        cle = cleEntree.replace(" ","")
         longueurCle = len(cle)
         j=0
         message = ""

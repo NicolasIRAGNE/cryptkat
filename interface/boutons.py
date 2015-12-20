@@ -40,7 +40,7 @@ labelSaisieMessage = Label(fen, text="Entrez votre message ici.")
 saisieMessage = Entry(fen, width=40)
 
 labelSaisieCle = Label(fen, text="Entrez votre clé ici")
-labelSaisieCle2 = Label(fen, text="(sans espaces!)")
+#labelSaisieCle2 = Label(fen, text="(sans espaces!)")
 saisieCle = Entry(fen)
 
 boutonCrypterVigenere = Button(fen,compound=LEFT,image=clerouge, text='Crypter (Vigenere)', width =150, command=boutonVC)

@@ -17,7 +17,7 @@ def initialiser():
 	labelSaisieCle.grid(row=3,column=1,padx=5)
 #1ER LABEL
 
-	labelSaisieCle2.grid(row=4,column=1)
+	#labelSaisieCle2.grid(row=4,column=1)
 #CHAMP CLE
 
 #2EME LABEL
@@ -43,16 +43,16 @@ def initialiser():
 	boutonRotation.grid(row=5,rowspan=2)
 #1ER LABEL
 
-	labelRotation.grid(row=5,column=1,padx=5)
+	labelRotation.grid(row=4,column=1,padx=5,rowspan=3)
 #2EME LABEL
 
-	labelRotation2.grid(row=6,column=1,rowspan=2)
+	labelRotation2.grid(row=5,column=1,rowspan=3)
 #----------------------------------------------------------------------------------------------------------------------------------
 
 #----------------------------------------------------------------------------------------------------------------------------------
 # CHAMP SAISIE ROTATION
 
-	saisieRotation.grid(row=6,column=1)
+	saisieRotation.grid(row=5,column=1,rowspan=2)
 	saisieRotation.insert(0,13)
 #----------------------------------------------------------------------------------------------------------------------------------
 
