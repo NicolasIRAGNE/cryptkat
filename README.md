@@ -1,3 +1,3 @@
 # cryptkat
 
-# Petit utilitaire de cryptage simple
+ Petit utilitaire de cryptage simple
