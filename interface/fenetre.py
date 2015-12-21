@@ -1,4 +1,4 @@
 from tkinter import *
 fen = Tk()
-fen.title("PROJET 2.9")
+fen.title("PROJET 3.0")
 fen.resizable(0,0)

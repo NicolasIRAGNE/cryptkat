@@ -6,6 +6,7 @@ from fonctions.atbash import *
 from fonctions.rot import *
 import fonctions.morse
 import fonctions.vigenere
+import fonctions.bruteforce
 
 def boutonVC():
     champResultat.delete(0, END)
@@ -30,6 +31,11 @@ def boutonRotation():
     champResultat.delete(0, END)
     champResultat.insert(0,effectuerRotation(str(saisieMessage.get()).lower(), int(saisieRotation.get())%26))
 
+def fonctionRotationBruteforce():
+    champResultat.delete(0, END)
+    fonctions.bruteforce.rotation(str(saisieMessage.get().lower()))
+    champResultat.insert(0, "Voir console !")
+
 def boutonMiroir():
     champResultat.delete(0, END)
     champResultat.insert(0,(miroir(str(saisieMessage.get().lower()))))
@@ -40,7 +46,6 @@ labelSaisieMessage = Label(fen, text="Entrez votre message ici.")
 saisieMessage = Entry(fen, width=40)
 
 labelSaisieCle = Label(fen, text="Entrez votre clé ici")
-#labelSaisieCle2 = Label(fen, text="(sans espaces!)")
 saisieCle = Entry(fen)
 
 boutonCrypterVigenere = Button(fen,compound=LEFT,image=clerouge, text='Crypter (Vigenere)', width =150, command=boutonVC)
@@ -50,6 +55,8 @@ boutonRotation = Button(fen,compound=LEFT,image=rotationImage, text="Rotation", 
 labelRotation = Label(fen, text="Rotation désirée:")
 labelRotation2 = Label(fen, text="(nombre entier)")
 saisieRotation = Entry(fen)
+
+boutonRotationBruteforce = Button(fen,compound=LEFT,image=rotationImage, text="Bruteforce Rotation", width = 150, command=fonctionRotationBruteforce)
 
 boutonMiroir = Button(fen,compound=LEFT,image=miroirImage, text="Miroir (Atbash)", width = 150, command=boutonMiroir)
 
