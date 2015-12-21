@@ -48,19 +48,19 @@ saisieMessage = Entry(fen, width=40)
 labelSaisieCle = Label(fen, text="Entrez votre clé ici")
 saisieCle = Entry(fen)
 
-boutonCrypterVigenere = Button(fen,compound=LEFT,image=clerouge, text='Crypter (Vigenere)', width =150, command=boutonVC)
+boutonCrypterVigenere = Button(fen,compound=LEFT,image=clerouge, text='Crypter (Vigenere)    ', width =150, command=boutonVC)
 boutonDecrypterVigenere = Button(fen,text='Décrypter (Vigenere)',compound=LEFT,image=cleverte, width =150, command=boutonVD)
 
-boutonRotation = Button(fen,compound=LEFT,image=rotationImage, text="Rotation", width = 150, command=boutonRotation)
+boutonRotation = Button(fen,compound=LEFT,image=rotationImage, text="        Rotation              ", width = 150, command=boutonRotation)
 labelRotation = Label(fen, text="Rotation désirée:")
 labelRotation2 = Label(fen, text="(nombre entier)")
 saisieRotation = Entry(fen)
 
-boutonRotationBruteforce = Button(fen,compound=LEFT,image=rotationImage, text="Bruteforce Rotation", width = 150, command=fonctionRotationBruteforce)
+boutonRotationBruteforce = Button(fen,compound=LEFT,image=rotationImage, text="Bruteforce Rotation  ", width = 150, command=fonctionRotationBruteforce)
 
-boutonMiroir = Button(fen,compound=LEFT,image=miroirImage, text="Miroir (Atbash)", width = 150, command=boutonMiroir)
+boutonMiroir = Button(fen,compound=LEFT,image=miroirImage, text="   Miroir (Atbash)      ", width = 150, command=boutonMiroir)
 
-boutonMorse = Button(fen, text="Morse",compound=LEFT,image=morseImage, width = 150, command=boutonMorse)
+boutonMorse = Button(fen, text="         Morse               ",compound=LEFT,image=morseImage, width = 150, command=boutonMorse)
 boutonMorseAudio = Button(fen, image=sound, width = 50, command=boutonMorseAudio)
 
 labelResultat = Label(fen, text="Résultat:")

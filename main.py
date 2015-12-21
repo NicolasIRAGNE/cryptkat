@@ -12,6 +12,12 @@ import fonctions.vigenere
 from interface.initialisation import initialiser
 #----------------------------------------------------------------------------------------------------------------------------------
 
+#log 3.0
+#bon c'est cool y'a la bruteforce maintenant c'est rigolo, mais c'est vraiment super super moche, et j'aime pas ça
+
+#log 3.1
+#c'est moins moche, c'est cool
+
 #----------------------------------------------------------------------------------------------------------------------------------
 #INITIALISATION DE LA FENETRE
 initialiser()
