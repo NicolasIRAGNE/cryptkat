@@ -23,7 +23,10 @@ from interface.initialisation import initialiser
 #c'est moins moche, c'est cool
 
 #log 3.2
-#nouvel icone thx antoine
+#nouvelle icone thx antoine
+
+#log 3.3
+#clé vigenere moins buggée
 
 #----------------------------------------------------------------------------------------------------------------------------------
 #INITIALISATION DE LA FENETRE
