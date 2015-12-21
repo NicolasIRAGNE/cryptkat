@@ -12,11 +12,17 @@ import fonctions.vigenere
 from interface.initialisation import initialiser
 #----------------------------------------------------------------------------------------------------------------------------------
 
+#log 2.9
+#reorganisé tout le bazar
+
 #log 3.0
 #bon c'est cool y'a la bruteforce maintenant c'est rigolo, mais c'est vraiment super super moche, et j'aime pas ça
 
 #log 3.1
 #c'est moins moche, c'est cool
+
+#log 3.2
+#nouvel icone thx antoine
 
 #----------------------------------------------------------------------------------------------------------------------------------
 #INITIALISATION DE LA FENETRE

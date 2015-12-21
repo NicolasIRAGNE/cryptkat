@@ -56,7 +56,7 @@ labelRotation = Label(fen, text="Rotation désirée:")
 labelRotation2 = Label(fen, text="(nombre entier)")
 saisieRotation = Entry(fen)
 
-boutonRotationBruteforce = Button(fen,compound=LEFT,image=rotationImage, text="Bruteforce Rotation  ", width = 150, command=fonctionRotationBruteforce)
+boutonRotationBruteforce = Button(fen,compound=LEFT,image=bruteforceImage, text="Bruteforce Rotation  ", width = 150, command=fonctionRotationBruteforce)
 
 boutonMiroir = Button(fen,compound=LEFT,image=miroirImage, text="   Miroir (Atbash)      ", width = 150, command=boutonMiroir)
 
