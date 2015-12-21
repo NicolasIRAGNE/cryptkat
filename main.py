@@ -7,6 +7,7 @@ from fonctions.conversion import *
 from fonctions.atbash import *
 from fonctions.rot import *
 from interface.boutons import *
+from fonctions.verification import *
 import fonctions.morse
 import fonctions.vigenere
 from interface.initialisation import initialiser

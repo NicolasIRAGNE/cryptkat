@@ -1,9 +1,10 @@
 ﻿# Créé par Nicolas, le 05/12/2015 en Python 3.2
 from fonctions.conversion import *
+from fonctions.verification import *
 
 def crypter(messageClair,cleEntree):
         longueurMessage = len(messageClair)
-        cle = cleEntree.replace(" ","")
+        cle = verification(cleEntree)
         longueurCle = len(cle)
         j = 0
         message = ""
@@ -26,10 +27,9 @@ def crypter(messageClair,cleEntree):
                 j = j + 1
         return(message)
 
-
 def decrypter(messageCrypte,cleEntree):
         longueurMessage = len(messageCrypte)
-        cle = cleEntree.replace(" ","")
+        cle = verification(cleEntree)
         longueurCle = len(cle)
         j=0
         message = ""
