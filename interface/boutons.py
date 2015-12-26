@@ -11,11 +11,11 @@ import fonctions.bruteforce
 def fonction_bouton_vigenere_crypter():
     champResultat.delete(0, END)
     fonctions.vigenere.crypter(str(saisieMessage.get()).lower(), str(saisieCle.get()))
-    champResultat.insert(0,fonctions.vigenere.crypter(str(saisieMessage.get()).lower(), str(saisieCle.get())))
+    champResultat.insert(0,fonctions.vigenere.crypter(str(saisieMessage.get()).lower(), str(saisieCle.get().lower())))
 
 def fonction_bouton_vigenere_decrypter():
     champResultat.delete(0, END)
-    champResultat.insert(0,fonctions.vigenere.decrypter(str(saisieMessage.get()).lower(), str(saisieCle.get())))
+    champResultat.insert(0,fonctions.vigenere.decrypter(str(saisieMessage.get()).lower(), str(saisieCle.get().lower())))
 
 def fonction_bouton_morse_crypter():
     champResultat.delete(0, END)

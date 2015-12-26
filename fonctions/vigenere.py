@@ -5,6 +5,7 @@ from fonctions.verification import *
 def crypter(messageClair,cleEntree):
         longueurMessage = len(messageClair)
         cle = verification(cleEntree)
+        cle = cle.lower()
         longueurCle = len(cle)
         j = 0
         message = ""
