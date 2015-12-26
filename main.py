@@ -28,6 +28,9 @@ from interface.initialisation import initialiser
 #log 3.3
 #clé vigenere moins buggée
 
+#log 3.4
+#youhouu decryptage morse par contre C BUGG2§§§§§§
+
 #----------------------------------------------------------------------------------------------------------------------------------
 #INITIALISATION DE LA FENETRE
 initialiser()
