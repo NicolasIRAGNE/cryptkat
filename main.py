@@ -33,6 +33,12 @@ from interface.initialisation import initialiser
 #log 3.4
 #youhouu decryptage morse par contre C BUGG2§§§§§§
 
+#log 3.5
+#corrigé bug de ponctuation
+
+#log 3.6
+# message aléatoire + audio morse corrigé
+
 #----------------------------------------------------------------------------------------------------------------------------------
 #INITIALISATION DE LA FENETRE
 initialiser()

@@ -27,7 +27,7 @@ def fonction_bouton_morse_decrypter():
 
 def fonction_bouton_morse_audio():
     fonctions.morse.lire(fonctions.morse.decrypter(saisieMessage.get().lower()))
-    champResultat.delete(0, END)
+    #champResultat.delete(0, END)
     #champResultat.insert(0,fonctions.morse.crypter(saisieMessage.get().lower()))
 
 def fonction_bouton_rotation():
