@@ -8,6 +8,8 @@ from fonctions.atbash import *
 from fonctions.rot import *
 from interface.boutons import *
 from fonctions.verification import *
+from winsound import Beep
+from time import sleep
 import fonctions.morse
 import fonctions.vigenere
 from interface.initialisation import initialiser
