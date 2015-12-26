@@ -12,7 +12,7 @@ from winsound import Beep
 from time import sleep
 import fonctions.morse
 import fonctions.vigenere
-from interface.initialisation import initialiser
+import interface.initialisation
 #----------------------------------------------------------------------------------------------------------------------------------
 
 #log 2.9
@@ -41,5 +41,5 @@ from interface.initialisation import initialiser
 
 #----------------------------------------------------------------------------------------------------------------------------------
 #INITIALISATION DE LA FENETRE
-initialiser()
+interface.initialisation.initialiser()
 #----------------------------------------------------------------------------------------------------------------------------------
