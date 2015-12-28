@@ -4,7 +4,7 @@ from fonctions.verification import *
 
 def crypter(messageClair,cleEntree):
         longueurMessage = len(messageClair)
-        cle = verification(cleEntree)
+        cle = enlever_espaces(cleEntree)
         cle = cle.lower()
         longueurCle = len(cle)
         j = 0
@@ -30,7 +30,7 @@ def crypter(messageClair,cleEntree):
 
 def decrypter(messageCrypte,cleEntree):
         longueurMessage = len(messageCrypte)
-        cle = verification(cleEntree)
+        cle = enlever_espaces(cleEntree)
         longueurCle = len(cle)
         j=0
         message = ""

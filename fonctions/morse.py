@@ -12,7 +12,7 @@ def ti(x): #Un ti correspond à un son court, de fréquence 800 Hz, avec 100 ms 
 
 def ta(x):
     for i in range (0,x): #Un ta correspond à un son court, de fréquence 800 Hz, avec 300 ms de durée
-        Beep(800, 225)
+        Beep(800, 250)
 
 def morseAudio(lettre):
     for i in range(0, len(str(lettre))):
@@ -24,7 +24,7 @@ def morseAudio(lettre):
             sleep(0.04)
         else:
             pass
-    sleep(0.12)
+    sleep(0.16)
 
 
 def morseEcrit(lettre): #Cette fonction retourne la transcription en morse d'une lettre.

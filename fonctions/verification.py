@@ -1,4 +1,4 @@
-def verification(chaine):
+def enlever_espaces(chaine):
     nouvelleChaine=""
     for i in range(0, len(chaine)):
         if chaine[i].isalpha() == False:
