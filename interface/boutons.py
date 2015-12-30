@@ -46,12 +46,7 @@ def fonction_bouton_miroir():
 
 def fonction_bouton_cesar_progressif():
     champResultat.delete(0, END)
-    #champResultat.insert(0,(cesar(str(saisieMessage.get().lower(), int(saisieRotation.get()%26, int(champPas.get()))))))
     champResultat.insert(0,cesar(str(saisieMessage.get().lower()), int(saisieRotation.get())%26, int(champPas.get())))
-    #saisieMessage.get().lower()
-    #saisieRotation.get()
-    #champPas.get()
-
 
 
 
