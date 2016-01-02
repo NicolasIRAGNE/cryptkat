@@ -53,20 +53,20 @@ def fonction_bouton_cesar_progressif():
 labelSaisieMessage = Label(fen, text="Entrez votre message ici.")
 saisieMessage = Entry(fen, width=40)
 
-labelSaisieCle = Label(fen, text="Entrez votre clÃ© ici")
+labelSaisieCle = Label(fen, text="Entrez votre clé ici")
 saisieCle = Entry(fen)
 
 boutonCrypterVigenere = Button(fen,compound=LEFT,image=clerouge, text='Vigenere (Crypter)    ', width =150, command=fonction_bouton_vigenere_crypter)
 boutonDecrypterVigenere = Button(fen,text='Vigenere (Decrypter)',compound=LEFT,image=cleverte, width =150, command=fonction_bouton_vigenere_decrypter)
 
 boutonRotation = Button(fen,compound=LEFT,image=rotationImage, text="        Rotation              ", width = 150, command=fonction_bouton_rotation)
-labelRotation = Label(fen, text="Rotation dÃ©sirÃ©e:")
+labelRotation = Label(fen, text="Rotation désirée:")
 labelRotation2 = Label(fen, text="(nombre entier)")
 saisieRotation = Entry(fen)
 
 boutonRotationBruteforce = Button(fen,compound=LEFT,image=bruteforceImage, text="Bruteforce Rotation  ", width = 150, command=fonction_bouton_rotation_bruteforce)
 
-boutonCesarProgressif = Button(fen, compound= LEFT, image=bruteforceImage, text = "Cesar progressif", width=150, command = fonction_bouton_cesar_progressif)
+boutonCesarProgressif = Button(fen, compound= LEFT, image=cesarImage, text = "Cesar progressif", width=150, command = fonction_bouton_cesar_progressif)
 labelPas = Label(fen, text="Pas:")
 champPas = Entry(fen)
 
