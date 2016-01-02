@@ -3,10 +3,11 @@ from random import choice
 fen = Tk()
 fen.title("PROJET 3.8")
 fen.resizable(0,0)
-messagesPossibles = ["Bonjour !",
+messagesPossibles = [
+"Bonjour !",
 "Salut !", 
 "Hey !",
-"Master of puppets I'm pulling your strings",
+"Master of puppets I'm pulling your \nstrings",
 "Ca fait 3 mois Antoine",
 "Ceci est un message d'exemple",
 "Coucou", "Les dataries feront l'affaire",
@@ -15,5 +16,6 @@ messagesPossibles = ["Bonjour !",
 ".... . -.--",
 "Bonjour !", 
 "Long live Mötorhead!",
-"Yoooooo"]
+"Yoooooo"
+]
 messageAccueil = choice(messagesPossibles)
