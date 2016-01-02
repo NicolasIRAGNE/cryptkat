@@ -76,7 +76,7 @@ boutonMorseCrypter = Button(fen, text="Morse (Crypter)",compound=LEFT,image=mors
 boutonMorseDecrypter = Button(fen, text="Morse (Decrypter)",compound=LEFT,image=morseImage2, width = 150, command=fonction_bouton_morse_decrypter)
 boutonMorseAudio = Button(fen, image=sound, width = 50, command=fonction_bouton_morse_audio)
 
-labelResultat = Label(fen, text="RÃ©sultat:")
+labelResultat = Label(fen, text="Résultat:")
 champResultat = Entry(fen, width=40)
 
 boutonQuitter = Button(fen,text='Quitter',compound=LEFT,image=quitter, width =150, command=fen.destroy)
