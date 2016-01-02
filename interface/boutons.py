@@ -1,4 +1,5 @@
 from tkinter import *
+from tkinter.scrolledtext import ScrolledText
 from interface.fenetre import *
 from interface.icones import *
 from fonctions.conversion import *
@@ -10,48 +11,48 @@ import fonctions.vigenere
 import fonctions.bruteforce
 
 def fonction_bouton_vigenere_crypter():
-    champResultat.delete(0, END)
-    fonctions.vigenere.crypter(str(saisieMessage.get()).lower(), str(saisieCle.get()))
-    champResultat.insert(0,fonctions.vigenere.crypter(str(saisieMessage.get()).lower(), str(saisieCle.get().lower())))
+    champResultat.delete("1.0", END)
+    fonctions.vigenere.crypter(str(saisieMessage.get("1.0",END)).lower(), str(saisieCle.get()))
+    champResultat.insert(END,fonctions.vigenere.crypter(str(saisieMessage.get("1.0",END)).lower(), str(saisieCle.get().lower())))
 
 def fonction_bouton_vigenere_decrypter():
-    champResultat.delete(0, END)
-    champResultat.insert(0,fonctions.vigenere.decrypter(str(saisieMessage.get()).lower(), str(saisieCle.get().lower())))
+    champResultat.delete("1.0", END)
+    champResultat.insert(END,fonctions.vigenere.decrypter(str(saisieMessage.get("1.0",END)).lower(), str(saisieCle.get().lower())))
 
 def fonction_bouton_morse_crypter():
-    champResultat.delete(0, END)
-    champResultat.insert(0,fonctions.morse.crypter(saisieMessage.get().lower()))
+    champResultat.delete("1.0", END)
+    champResultat.insert(END,fonctions.morse.crypter(saisieMessage.get("1.0",END).lower()))
 
 def fonction_bouton_morse_decrypter():
-    champResultat.delete(0, END)
-    champResultat.insert(0, fonctions.morse.decrypter(saisieMessage.get().lower()))
+    champResultat.delete("1.0", END)
+    champResultat.insert(END, fonctions.morse.decrypter(saisieMessage.get("1.0",END).lower()))
 
 def fonction_bouton_morse_audio():
-    fonctions.morse.lire(fonctions.morse.decrypter(saisieMessage.get().lower()))
-    #champResultat.delete(0, END)
+    fonctions.morse.lire(fonctions.morse.decrypter(saisieMessage.get("1.0",END).lower()))
+    #champResultat.delete("1.0", END)
     #champResultat.insert(0,fonctions.morse.crypter(saisieMessage.get().lower()))
 
 def fonction_bouton_rotation():
-    champResultat.delete(0, END)
-    champResultat.insert(0,effectuerRotation(str(saisieMessage.get()).lower(), int(saisieRotation.get())%26))
+    champResultat.delete("1.0", END)
+    champResultat.insert(END,effectuerRotation(str(saisieMessage.get("1.0",END)).lower(), int(saisieRotation.get())%26))
 
 def fonction_bouton_rotation_bruteforce():
-    champResultat.delete(0, END)
-    fonctions.bruteforce.rotation(str(saisieMessage.get().lower()))
-    champResultat.insert(0, "Voir console !")
+    champResultat.delete("1.0", END)
+    fonctions.bruteforce.rotation(str(saisieMessage.get("1.0",END).lower()))
+    champResultat.insert(END, "Voir console !")
 
 def fonction_bouton_miroir():
-    champResultat.delete(0, END)
-    champResultat.insert(0,(miroir(str(saisieMessage.get().lower()))))
+    champResultat.delete("1.0", END)
+    champResultat.insert(END,(miroir(str(saisieMessage.get("1.0",END).lower()))))
 
 def fonction_bouton_cesar_progressif():
-    champResultat.delete(0, END)
-    champResultat.insert(0,cesar(str(saisieMessage.get().lower()), int(saisieRotation.get())%26, int(champPas.get())))
+    champResultat.delete("1.0", END)
+    champResultat.insert(END,cesar(str(saisieMessage.get("1.0",END).lower()), int(saisieRotation.get())%26, int(champPas.get())))
 
 
 
 labelSaisieMessage = Label(fen, text="Entrez votre message ici.")
-saisieMessage = Entry(fen, width=40)
+saisieMessage = ScrolledText(fen, width=40, height = 3)
 
 labelSaisieCle = Label(fen, text="Entrez votre clé ici")
 saisieCle = Entry(fen)
@@ -77,6 +78,6 @@ boutonMorseDecrypter = Button(fen, text="Morse (Decrypter)",compound=LEFT,image=
 boutonMorseAudio = Button(fen, image=sound, width = 50, command=fonction_bouton_morse_audio)
 
 labelResultat = Label(fen, text="Résultat:")
-champResultat = Entry(fen, width=40)
+champResultat = ScrolledText(fen, width=40, height = 3)
 
 boutonQuitter = Button(fen,text='Quitter',compound=LEFT,image=quitter, width =150, command=fen.destroy)

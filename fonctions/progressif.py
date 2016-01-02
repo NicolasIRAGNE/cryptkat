@@ -11,7 +11,7 @@ def cesar(messageClair, rotation, pas):
 			elif messageClair[i].isalpha() == False:
 				message+=str(messageClair[i])
 			else:
-				messageCrypte = conversion(messageClair[i]) + rotation
+				messageCrypte = (conversion(messageClair[i]) + rotation)%26
 				messageCrypte = conversion(messageCrypte)
 				message += str(messageCrypte)
 	return(message)

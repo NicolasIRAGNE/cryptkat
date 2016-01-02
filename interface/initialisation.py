@@ -8,7 +8,7 @@ def initialiser():
 
 #saisieMessage = Entry(fen, width=40)
 	saisieMessage.grid(row=2,columnspan=2) #champ
-	saisieMessage.insert(0,messageAccueil)
+	saisieMessage.insert(END,messageAccueil)
 #----------------------------------------------------------------------------------------------------------------------------------
 
 #----------------------------------------------------------------------------------------------------------------------------------
