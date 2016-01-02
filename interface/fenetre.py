@@ -14,5 +14,6 @@ messagesPossibles = ["Bonjour !",
 "C'est pas faux",
 ".... . -.--",
 "Bonjour !", 
+"Long live Mötorhead!"
 "Yoooooo"]
 messageAccueil = choice(messagesPossibles)
