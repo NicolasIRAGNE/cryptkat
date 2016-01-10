@@ -9,6 +9,7 @@ from fonctions.progressif import *
 import fonctions.morse
 import fonctions.vigenere
 import fonctions.bruteforce
+from fonctions.polybe import *
 
 def fonction_bouton_vigenere_crypter():
     champResultat.delete("1.0", END)
@@ -49,6 +50,12 @@ def fonction_bouton_cesar_progressif():
     champResultat.delete("1.0", END)
     champResultat.insert(END,cesar(str(saisieMessage.get("1.0",END).lower()), int(saisieRotation.get())%26, int(champPas.get())))
 
+def fonction_bouton_inverser_resultat():
+    saisieMessage.delete("1.0", END)
+    saisieMessage.insert(END, champResultat.get("1.0", END))
+
+def ouvrir_polybe():
+    initPolybe()
 
 
 labelSaisieMessage = Label(fen, text="Entrez votre message ici.")
@@ -79,5 +86,9 @@ boutonMorseAudio = Button(fen, image=sound, width = 50, command=fonction_bouton_
 
 labelResultat = Label(fen, text="Résultat:")
 champResultat = ScrolledText(fen, width=40, height = 3)
+
+boutonInverserResultat = Button(fen, text="Inverser", width = 10, command = fonction_bouton_inverser_resultat )
+
+boutonPolybe = Button(fen, text= "polybe", width =10, command = ouvrir_polybe)
 
 boutonQuitter = Button(fen,text='Quitter',compound=LEFT,image=quitter, width =150, command=fen.destroy)
