@@ -29,7 +29,7 @@ def conversion(lettre): #Cette fonction assigne à chaque lettre de l'alphabet u
         return 12
     if lettre == "n":
         return 13
-    if lettre == "o" or lettre == "ô":
+    if lettre == "o" or lettre == "ô" or lettre == "ö":
         return 14
     if lettre == "p":
         return 15
